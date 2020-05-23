@@ -3,7 +3,10 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $text;
+  background-color: $bg;
+  background-image: url("../../img/backgroundrepeat.jpg");
+  background-attachment: fixed;
 }
 @media (min-width: 992px) {
   body {
@@ -17,11 +20,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h5 {
   @include heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: $last;
 }
 
 h1 {
@@ -37,17 +41,16 @@ h3 {
   font-size: 2rem;
 }
 
+p.h5{
+	font-size:1.5rem;
+	text-transform:none;
+}
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  @include heading-font;
-  font-size: 1.5rem;
-}
 
 .social-icons {
   a {
@@ -65,7 +68,7 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: $secondary;
     }
   }
 }
@@ -76,5 +79,7 @@ p.lead {
     &:hover {
       color: $primary;
     }
+  	color:$last;
   }
 }
+

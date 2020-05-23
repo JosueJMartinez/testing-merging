@@ -21,6 +21,7 @@ const banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
+  ' * Modified by Josue J Martinez\n',		
   ' */\n',
   '\n'
 ].join('');
@@ -28,6 +29,7 @@ const banner = ['/*!\n',
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
+	  host:'https://variouswebapps-uvzpg.run.goorm.io',
     server: {
       baseDir: "./"
     },
@@ -67,7 +69,9 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+  var aos = gulp.src('./node_modules/aos/dist/**/*')
+    .pipe(gulp.dest('./vendor/aos'));
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, aos);
 }
 
 // CSS task

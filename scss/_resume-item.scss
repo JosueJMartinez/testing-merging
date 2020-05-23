@@ -9,6 +9,19 @@ section.resume-section {
     }
   }
 }
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background: url("../../img/life-wallpaper-preview2.jpg") top center;
+  background-size: none;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width:none;
+}
+
+
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
