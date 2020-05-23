@@ -1,0 +1,37 @@
+/* Cursor Styling */
+
+#IAM{
+	min-height:115px;
+}
+
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:$secondary;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+h3.cursor::after {
+  height:1.6rem;
+  width:0.86rem;
+}
+p.cursor::after {
+  height:1.3rem;
+  width:0.65rem;
+}
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
