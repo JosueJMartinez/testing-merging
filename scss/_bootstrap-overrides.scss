@@ -10,44 +10,9 @@
 	color: $secondary !important;
 }
 
-.card{
-	background-color: $secondary;
-	.float-right{
-		color: $secondary;
-		font-size:1.33rem;
-		text-transform:none;
-	}
-	.card-header{
-		background-color: $primary;
-		color: $secondary;
-		@include heading-font;
-		font-size: 1.8rem;
-	}
-	.card-body{
-		background-color:lighten($primary, 15%);
-		color:$text;
-		ul{
-			padding-inline-start: 0px;
-			list-style-type: none;
-		}
-		.subheading {
-			text-transform: uppercase;
-			@include heading-font;
-			font-size: 1.5rem;
-		}
-		.demo{
-			color:$primary;
-			background-color:$last;
-			font-size: 1rem;
-			border-color: $last;
-			&:hover {
-			  color: $last;
-			  background-color: $primary;
-			}
-		}
-	}
+.border-secondary{
+	border-color:$secondary !important;
 }
-
 
 a {
   color: darken($secondary, 15%);
