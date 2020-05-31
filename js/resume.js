@@ -9,9 +9,9 @@
 
 	// Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 	var textArray = [
-		"Stack Developer:|console.log('Hello World!');",
-		'Web Developer:|<p>Hello World!</p>',
-		'Freelancer:|System.out.println("Hello World!");'
+		"console.log('Hello World!');",
+		'<p>Hello World!</p>',
+		'System.out.println("Hello World!");'
 	];
 
 	// Speed (in milliseconds) of typing.
@@ -59,7 +59,7 @@
     });
 });
 	
-	//Run the loop
+	// Run the loop
 	typeWriter('output', textArray);
 
 	function typeWriter(id, ar) {
@@ -132,6 +132,7 @@
 			}
 		}
 	};
+
 	
 	AOS.init({
     	duration: 1000,

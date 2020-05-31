@@ -36,13 +36,8 @@ section.resume-section {
 }
 
 #about {
-  width: 100vw;
-  height: 100vh;
-  background: url("../../img/hero-background.jpg") top center;
-  background-size: none;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  max-width:none;
+  	background: url(../../img/backgroundhero.jpeg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 
@@ -67,5 +62,12 @@ section.resume-section {
 		border-bottom: 0px solid $secondary!important;
 	}
   }
+}
+
+@media(max-width:575px){
+	h1{
+		font-size: 4rem;
+		line-height: 3.5rem;
+	}
 }
 

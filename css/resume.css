@@ -180,13 +180,8 @@ section.resume-section .resume-item .demo:hover {
 }
 
 #about {
-  width: 100vw;
-  height: 100vh;
-  background: url("../../img/hero-background.jpg") top center;
-  background-size: none;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  max-width: none;
+  background: url(../../img/backgroundhero.jpeg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -209,6 +204,13 @@ section.resume-section .resume-item .demo:hover {
   }
   section.resume-section .border-sm {
     border-bottom: 0px solid #66FCF1 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -253,6 +255,10 @@ a:hover, a:focus, a:active {
 /* Cursor Styling */
 #IAM {
   min-height: 115px;
+}
+
+#IAM h3 {
+  text-transform: none;
 }
 
 .cursor::after {
