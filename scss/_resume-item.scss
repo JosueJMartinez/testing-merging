@@ -1,73 +1,76 @@
 section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  // max-width: 75rem;
-	.float-right{
+	padding-top: 5rem !important;
+	padding-bottom: 5rem !important;
+	// max-width: 75rem;
+	.float-right {
 		color: $secondary;
-		font-size:1.33rem;
-		text-transform:none;
+		font-size: 1.33rem;
+		text-transform: none;
 	}
-	h2{
-		color:$secondary;
+	h2 {
+		color: $secondary;
 	}
-  .resume-item {
-	
-	h4{
-		font-style: italic;
-	}
-	ul{
-		padding-inline-start:20px;
-	}
-    .resume-date {
-      min-width: none;
-    }
-	
-	.demo{
-		color:$primary;
-		background-color:$last;
-		font-size: 1rem;
-		border-color: $last;
-		&:hover {
-		  color: $last;
-		  background-color: $primary;
+	.resume-item {
+		h4 {
+			font-style: italic;
 		}
-	}	
-  }
+		ul {
+			padding-inline-start: 20px;
+		}
+		.resume-date {
+			min-width: none;
+		}
+
+		.demo {
+			color: $primary;
+			background-color: $last;
+			font-size: 1rem;
+			border-color: $last;
+			&:hover {
+				color: $last;
+				background-color: $primary;
+			}
+		}
+	}
 }
 
 #about {
-  	background: url(../../img/backgroundhero.jpeg) no-repeat center center fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../../img/hero-background.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
+#about .hero {
+	background-color: $primary-transparent;
+	padding: 4rem;
+}
 
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-    .resume-item {
-      .resume-date {
-        min-width: 18rem;
-      }
-    }
-  }
+	section.resume-section {
+		min-height: 100vh;
+		.resume-item {
+			.resume-date {
+				min-width: 18rem;
+			}
+		}
+	}
 }
-.border-sm{
-	border-bottom: 1px solid $secondary!important
+.border-sm {
+	border-bottom: 1px solid $secondary !important;
 }
 @media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-	.border-sm{
-		border-bottom: 0px solid $secondary!important;
+	section.resume-section {
+		padding-top: 3rem !important;
+		padding-bottom: 3rem !important;
+		.border-sm {
+			border-bottom: 0px solid $secondary !important;
+		}
 	}
-  }
 }
 
-@media(max-width:575px){
-	h1{
+@media (max-width: 575px) {
+	h1 {
 		font-size: 4rem;
 		line-height: 3.5rem;
 	}
 }
-

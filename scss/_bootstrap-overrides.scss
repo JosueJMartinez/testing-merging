@@ -1,36 +1,36 @@
 .bg-primary {
-  background-color: $primary !important;
+	background-color: $primary !important;
 }
 
 .text-primary {
-  color: $text !important;
+	color: $text !important;
 }
 
-.text-secondary{
+.text-secondary {
 	color: $secondary !important;
 }
 
-.border-secondary{
-	border-color:$secondary !important;
+.border-secondary {
+	border-color: $secondary !important;
 }
 
 a {
-  color: darken($secondary, 15%);
-  &:hover,
-  &:focus,
-  &:active {
-    color: $secondary;
-  }
+	color: darken($secondary, 15%);
+	&:hover,
+	&:focus,
+	&:active {
+		color: $secondary;
+	}
 }
-.popover-header{
+.popover-header {
 	background-color: $last;
 	color: $bg;
 }
-.popover-body{
+.popover-body {
 	background-color: $primary;
 	color: $secondary;
 }
 
-.container{
+.container {
 	background-color: $bg;
 }

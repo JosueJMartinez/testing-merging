@@ -1,18 +1,18 @@
 // Global styling for this template
 
 body {
-  @include body-font;
-  padding-top: 54px;
-  color: $text;
-  background-color: $bg;
-  background-image: url("../../img/backgroundrepeat.jpg");
-  background-attachment: fixed;
+	@include body-font;
+	padding-top: 54px;
+	color: $text;
+	background-color: $bg;
+	background-image: url("../../img/backgroundrepeat.jpg");
+	background-attachment: fixed;
 }
 @media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: $sidebar-base-width;
-  }
+	body {
+		padding-top: 0;
+		padding-left: $sidebar-base-width;
+	}
 }
 
 h1,
@@ -22,64 +22,62 @@ h4,
 h5,
 h6,
 .h5 {
-  @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $last;
+	@include heading-font;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $last;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+	font-size: 6rem;
+	line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+	font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
-p.h5{
-	font-size:1.5rem;
-	text-transform:none;
+p.h5 {
+	font-size: 1.5rem;
+	text-transform: none;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+	font-size: 1.15rem;
+	font-weight: 400;
 }
 
-
 .social-icons {
-  a {
-    display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      background-color: $secondary;
-    }
-  }
+	a {
+		display: inline-block;
+		height: 3.5rem;
+		width: 3.5rem;
+		background-color: $gray-700;
+		color: $white !important;
+		border-radius: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		margin-right: 1rem;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: $secondary;
+		}
+	}
 }
 
 .dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
-    }
-  	color:$last;
-  }
+	font-size: 3rem;
+	.list-inline-item i {
+		&:hover {
+			color: $primary;
+		}
+		color: $last;
+	}
 }
-

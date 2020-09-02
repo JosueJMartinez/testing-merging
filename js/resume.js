@@ -23,11 +23,14 @@
 	// Smooth scrolling using jQuery easing
 	$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
 		if (
-			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+			location.pathname.replace(/^\//, '') ==
+				this.pathname.replace(/^\//, '') &&
 			location.hostname == this.hostname
 		) {
 			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			target = target.length
+				? target
+				: $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
 				$('html, body').animate(
 					{
@@ -51,14 +54,15 @@
 		target: '#sideNav'
 	});
 
-	$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-		placement : 'top',
-        trigger: 'hover',
-		template:'<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header border-bottom-0"></h3><div class="popover-body"></div></div>'
-    });
-});
-	
+	$(document).ready(function() {
+		$('[data-toggle="popover"]').popover({
+			placement: 'top',
+			trigger: 'hover',
+			template:
+				'<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header border-bottom-0"></h3><div class="popover-body"></div></div>'
+		});
+	});
+
 	// Run the loop
 	typeWriter('output', textArray);
 
@@ -110,11 +114,15 @@
 			if (eHeader.text().length > 0 || eParagraph.text().length > 0) {
 				// If paragraph still has text, continue erasing, otherwise switch to the header.
 				if (eParagraph.text().length > 0) {
-					eParagraph.text(eParagraph.text().substring(0, eParagraph.text().length - 1));
+					eParagraph.text(
+						eParagraph.text().substring(0, eParagraph.text().length - 1)
+					);
 				} else if (eHeader.text().length > 0) {
 					eParagraph.removeClass('cursor');
 					eHeader.addClass('cursor');
-					eHeader.text(eHeader.text().substring(0, eHeader.text().length - 1));
+					eHeader.text(
+						eHeader.text().substring(0, eHeader.text().length - 1)
+					);
 				}
 				setTimeout(function() {
 					typeWriter(id, ar);
@@ -131,11 +139,10 @@
 				}, 50);
 			}
 		}
-	};
+	}
 
-	
 	AOS.init({
-    	duration: 1000,
-    	easing: "ease-in-out-back"
-    });
+		duration: 1000,
+		easing: 'ease-in-out-back'
+	});
 })(jQuery); // End of use strict
