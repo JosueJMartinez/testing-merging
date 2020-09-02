@@ -9,9 +9,11 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #c5c6c7;
-  background-color: #1f2833;
-  background-image: url("../../img/backgroundrepeat.jpg");
-  background-attachment: fixed;
+  background: #0b0c10;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b0c10, #45a29e, #66fcf1);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media (min-width: 992px) {
@@ -182,11 +184,7 @@ section.resume-section .resume-item .demo:hover {
 #about {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero-background.jpg) no-repeat center center fixed;
   background-size: cover;
-}
-
-#about .hero {
-  background-color: #0b0c10b6;
-  padding: 2rem;
+  box-shadow: inset 0 0 0 2000000px #0b0c10b6;
 }
 
 @media (min-width: 768px) {

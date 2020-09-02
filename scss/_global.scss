@@ -4,9 +4,22 @@ body {
 	@include body-font;
 	padding-top: 54px;
 	color: $text;
-	background-color: $bg;
-	background-image: url("../../img/backgroundrepeat.jpg");
-	background-attachment: fixed;
+	background: $primary; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		$primary,
+		$last,
+		$secondary
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		$primary,
+		$last,
+		$secondary
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// background-color: $bg;
+	// background-image: url("../../img/backgroundrepeat.jpg");
+	// background-attachment: fixed;
 }
 @media (min-width: 992px) {
 	body {
@@ -14,7 +27,6 @@ body {
 		padding-left: $sidebar-base-width;
 	}
 }
-
 h1,
 h2,
 h3,
@@ -27,36 +39,31 @@ h6,
 	text-transform: uppercase;
 	color: $last;
 }
-
 h1 {
 	font-size: 6rem;
 	line-height: 5.5rem;
 }
-
 h2 {
 	font-size: 3.5rem;
 }
-
 h3 {
 	font-size: 2rem;
 }
-
 p.h5 {
 	font-size: 1.5rem;
 	text-transform: none;
 }
-
 p.lead {
 	font-size: 1.15rem;
 	font-weight: 400;
 }
-
 .social-icons {
 	a {
 		display: inline-block;
 		height: 3.5rem;
 		width: 3.5rem;
 		background-color: $gray-700;
+
 		color: $white !important;
 		border-radius: 100%;
 		text-align: center;
@@ -71,7 +78,6 @@ p.lead {
 		}
 	}
 }
-
 .dev-icons {
 	font-size: 3rem;
 	.list-inline-item i {
