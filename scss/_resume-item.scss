@@ -38,11 +38,10 @@ section.resume-section {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url(../../img/hero-background.jpg) no-repeat center center fixed;
 	background-size: cover;
-}
-
-#about .hero {
-	background-color: $primary-transparent;
-	padding: 4rem;
+	.hero {
+		background-color: $primary-transparent;
+		padding: 4rem;
+	}
 }
 
 @media (min-width: 768px) {
