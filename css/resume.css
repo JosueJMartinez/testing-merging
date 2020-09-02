@@ -186,7 +186,7 @@ section.resume-section .resume-item .demo:hover {
 
 #about .hero {
   background-color: #0b0c10b6;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
