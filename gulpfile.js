@@ -31,7 +31,7 @@ const banner = [
 // BrowserSync
 function browserSync(done) {
 	browsersync.init({
-		host: 'https://variouswebapps-uvzpg.run.goorm.io',
+		// host: 'https://variouswebapps-uvzpg.run.goorm.io',
 		server: {
 			baseDir: './'
 		},
