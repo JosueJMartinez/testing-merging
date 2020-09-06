@@ -6,13 +6,13 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #c5c6c7;
   background-color: #1f2833;
   background: url(./../img/bg-general.jpg) no-repeat center center fixed;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000000px #0b0c10e7;
+  box-shadow: inset 0 0 0 2000000px #0b0c10c7;
 }
 
 @media (min-width: 992px) {
@@ -29,7 +29,7 @@ h4,
 h5,
 h6,
 .h5 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
   color: #45a29e;
@@ -183,7 +183,7 @@ section.resume-section .resume-item .demo:hover {
 #hero {
   background: url(./../img/bg-hero.jpg) no-repeat center center fixed;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000000px #0b0c10e7;
+  box-shadow: inset 0 0 0 2000000px #0b0c10c7;
 }
 
 @media (min-width: 768px) {
