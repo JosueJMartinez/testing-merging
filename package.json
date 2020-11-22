@@ -36,6 +36,7 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-resume.git"
     },
     "dependencies": {
+        "aos": "^2.3.4",
         "bootstrap": "4.5.3"
     },
     "devDependencies": {
